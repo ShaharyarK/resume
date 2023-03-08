@@ -15,10 +15,10 @@ camera.position.setX(-3);
 renderer.render(scene, camera);
 
 // Torus
-const moonTexture = new THREE.TextureLoader().load("img/moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("img/normal.jpg");
-const meTexture = new THREE.TextureLoader().load("img/shaharyar.jpg");
-const spaceTexture = new THREE.TextureLoader().load("img/space.jpg");
+const moonTexture = new THREE.TextureLoader().load("files/img/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("files/img/normal.jpg");
+const meTexture = new THREE.TextureLoader().load("files/img/shaharyar.jpg");
+const spaceTexture = new THREE.TextureLoader().load("files/img/space.jpg");
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({  map: moonTexture, normalMap: normalTexture, color: 0xff6347 });
 const torus = new THREE.Mesh(geometry, material);
